@@ -1,0 +1,28 @@
+body{
+	padding-top: 50px;
+
+
+}
+
+#headerWrapper {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	height: 600px;
+	background-image: url(https://cdn.motor1.com/images/mgl/GwMPV/s3/la-auto-show-cover-photo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 700px; 
+	background-position: top center;
+	background-attachment: fixed;
+
+}
+
+.img-thumb {
+	width:auto;
+	height: 200px;
+}
+
+#footer{
+	margin-top: 100px;
+}
