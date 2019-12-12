@@ -1,6 +1,6 @@
 <?php 
 
-require_once $_SERVER['DOCUMENT_ROOT'].'/test/PROJECT4/core/init.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/core/init.php';
 $product_id = sanitize($_POST['product_id']);
 $size = sanitize($_POST['size']);
 $available = sanitize($_POST['available']);

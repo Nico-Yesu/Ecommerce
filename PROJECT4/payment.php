@@ -17,7 +17,7 @@ $featured = $db->query($sql);
 <html>
 <head>
 	<title>Nico's Store</title>
-<style type="text/css">
+<style type="text/css">	
 	
 .row {
   display: -ms-flexbox; /* IE10 */
@@ -125,7 +125,7 @@ span.price {
 <div class="row">
   <div class="col-75">
     <div class="container">
-      <form action="/action_page.php">
+      <form action="action_page.php">
 
         <div class="row">
           <div class="col-50">
@@ -193,15 +193,13 @@ span.price {
       <h4>Cart
         <span class="price" style="color:black">
           <i class="fa fa-shopping-cart"></i>
-          <b>4</b>
+          <b>2</b>
         </span>
       </h4>
-      <p><a href="#">Sedan Rental</a> <span class="price">$18.99</span></p>
-      <p><a href="#">Truck Rental</a> <span class="price">$25.00</span></p>
-      <p><a href="#">Sports Car Rental</a> <span class="price">$50.99</span></p>
-      <p><a href="#">Van Rental</a> <span class="price">$70.99</span></p>
+      <p><a href="#">Truck Rental</a> <span class="price">$54.99</span></p>
+      <p><a href="#">Sports Car Rental</a> <span class="price">$99.99</span></p>
       <hr>
-      <p>Total <span class="price" style="color:black"><b>$165.97 per day</b></span></p>
+      <p>Total <span class="price" style="color:black"><b>$154.98 per day</b></span></p>
     </div>
   </div>
 </div>

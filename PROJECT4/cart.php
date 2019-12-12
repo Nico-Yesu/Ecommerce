@@ -15,7 +15,7 @@ require_once 'core/init.php';
 include 'includes/nav.php';
 //include 'includes/detailsmodal.php';
 
-$sql = "SELECT * FROM products WHERE featured = 1";
+$sql = "SELECT * FROM products WHERE price > 50";
 $db->query($sql);
 $featured = $db->query($sql);
 ?>
@@ -53,6 +53,7 @@ $featured = $db->query($sql);
 
 
 <!--main-->
+<a name = "inventory"></a>
 <div class="col-md-8">
 <div class="row">
 	<h2 class="text-center"> </h2>
@@ -63,7 +64,7 @@ $featured = $db->query($sql);
 		<img src="<?= $product['image']; ?>" alt="<?= $product['title']; ?>" />
 		<p class="list-price text-danger"> List Price <s> $ <?= $product['list_price']; ?> </s> a Day</p>
 		<p class="price" style="color: green;">Our Price: <?= $product['price']; ?> a Day! </p>
-		<button type="button" class="btn btn-sm btn-success" onclick="detailsmodal(<?= $product['id']; ?>)">BUY NOW</button>
+		<button type="button" class="btn btn-sm btn-success" onclick="window.location.href='payment.php';">CHECKOUT</button>
 	</div>
 <?php endwhile;  ?>
 
@@ -73,11 +74,6 @@ $featured = $db->query($sql);
 
 <br><br><br><br>
 
-
-
-
-
-<a href="payment.php">Proceed to CheckOut!</a>
 
 <footer class="text-center" id="footer">&copy; Copyright 2019 Dario and Nico</footer>
 

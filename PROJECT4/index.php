@@ -33,6 +33,7 @@ Featured Products:
 
 
 <!--main-->
+<a name = "inventory"></a>
 <div class="col-md-8">
 <div class="row">
 	<h2 class="text-center"> </h2>
@@ -73,7 +74,7 @@ Featured Products:
 	function detailsmodal(id){
 		var data = {"id" : id};
 		jQuery.ajax({
-			url : '/test/PROJECT4/includes/detailsmodal.php',
+			url : 'includes/detailsmodal.php',
 			method : "post",
 			data : data,
 			success: function(data){
@@ -100,7 +101,7 @@ function add_to_cart(){
 		return;
 	}else{
 		jQuery.ajax({
-			url : '/test/PROJECT4/admin/parsers/add_cart.php',
+			url : 'admin/parsers/add_cart.php',
 			method : 'post',
 			data : data,
 			success : function(){},
